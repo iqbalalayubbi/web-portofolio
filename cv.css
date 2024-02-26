@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/*! css variabel */
+:root {
+    --text: #f5f5f5;
+    --bg: #363457;
+    --primary: #735290;
+    --bg-text: #465c69;
+    --shadowColor: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+/*! css reset */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*! my style */
+
+/*? main */
+main {
+    display: flex;
+    height: 100vh;
+}
+
+/*? hero-section */
+section.hero-section {
+    height: 100%;
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    width: 40%;
+}
+
+/** hero-section > profile */
+section.hero-section .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+}
+
+section.hero-section .profile img {
+    width: 30%;
+}
+
+section.hero-section .profile h1 {
+    font-size: 0.8em;
+    font-weight: 600;
+    color: var(--text);
+    background-color: var(--primary);
+    padding: 0.2em 2em;
+    margin-top: -1.2em;
+}
+
+/** hero-section > social-media */
+section.hero-section .social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+}
+
+section.hero-section .social-media .contact {
+    display: flex;
+    gap: 0.5em;
+}
+
+section.hero-section .social-media .contact img {
+    width: 14px;
+}
+
+section.hero-section .social-media .contact h3 {
+    font-size: 0.8em;
+    font-weight: 300;
+    color: var(--text);
+    opacity: 0.8;
+}
+
+/** hero-section > certificate */
+section.hero-section .certificate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.hero-section .certificate > h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 1em;
+    font-weight: 600;
+    color: var(--text);
+    background-color: var(--primary);
+    padding: 0.1em 0;
+}
+
+section.hero-section .certificate .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+section.hero-section .certificate .cards .card {
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    width: 80%;
+}
+
+section.hero-section .certificate .cards .card h1 {
+    font-size: 0.8em;
+    font-weight: 600;
+}
+section.hero-section .certificate .cards .card span {
+    font-size: 0.7em;
+    font-weight: 400;
+    background-color: var(--bg-text);
+    width: fit-content;
+    padding: 0.2em 2em;
+}
+
+/*? info-section */
+/** info-section > title */
+section.info-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.info-section .container {
+    width: 80%;
+}
+
+section.info-section .title {
+    background-color: var(--primary);
+    padding: 0.5em 1.2em;
+    color: var(--text);
+    width: fit-content;
+    display: flex;
+    gap: 3em;
+    align-items: center;
+}
+
+section.info-section .title h1 {
+    font-weight: 600;
+}
+
+/** info-section > skill */
+section.info-section .skill-section {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+section.info-section .skill-section .cards {
+    display: flex;
+    gap: 5em;
+}
+
+section.info-section .skill-section .cards .card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+section.info-section .skill-section .cards .card h3 {
+    font-weight: 600;
+    color: var(--bg-text);
+}
+
+section.info-section .skill-section .cards .card ul li {
+    font-size: 0.8em;
+    list-style-type: square;
+}
+
+/** info-section > project */
