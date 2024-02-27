@@ -63,7 +63,8 @@ section.hero-section {
     display: flex;
     flex-direction: column;
     gap: 1.5em;
-    width: 40%;
+    width: 50%;
+    align-items: center;
 }
 
 /** hero-section > profile */
@@ -98,17 +99,23 @@ section.hero-section .social-media {
 section.hero-section .social-media .contact {
     display: flex;
     gap: 0.5em;
+    filter: brightness(70%);
+}
+section.hero-section .social-media .contact:hover {
+    cursor: pointer;
+    filter: brightness(100%);
+    transition: all 0.3s ease-in;
 }
 
 section.hero-section .social-media .contact img {
     width: 14px;
 }
 
-section.hero-section .social-media .contact h3 {
+section.hero-section .social-media .contact a {
     font-size: 0.8em;
     font-weight: 300;
     color: var(--text);
-    opacity: 0.8;
+    text-decoration: none;
 }
 
 /** hero-section > certificate */
@@ -148,6 +155,13 @@ section.hero-section .certificate .cards .card h1 {
     font-size: 0.8em;
     font-weight: 600;
 }
+
+section.hero-section .certificate .cards .card > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 section.hero-section .certificate .cards .card span {
     font-size: 0.7em;
     font-weight: 400;
@@ -156,7 +170,76 @@ section.hero-section .certificate .cards .card span {
     padding: 0.2em 2em;
 }
 
+section.hero-section .certificate .cards .card a {
+    color: var(--text);
+    opacity: 0.6;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+section.hero-section .certificate .cards .card a:hover {
+    opacity: 1;
+    transition: all 0.3s ease-in;
+}
+
+section.hero-section button.back {
+    margin-top: 0.8em;
+    background-color: rgb(183, 0, 0);
+    color: var(--text);
+    border: none;
+    padding: 0.5em 2em;
+    border-radius: 0.3em;
+    font-weight: 500;
+    font-size: 0.8em;
+}
+
+section.hero-section button.back:hover {
+    background-color: rgb(155, 0, 0);
+    transition: all 0.3s ease-in;
+    box-shadow: none;
+}
+
+section.hero-section button.back a {
+    font-weight: 600;
+    color: var(--text);
+    text-decoration: none;
+    opacity: 0.8;
+}
+
 /*? info-section */
+section.info-section .title {
+    background-color: var(--primary);
+    padding: 0.2em 1.2em;
+    color: var(--text);
+    width: fit-content;
+    display: flex;
+    gap: 3em;
+    align-items: center;
+}
+
+section.info-section .title img {
+    width: 15px;
+}
+
+section.info-section .title h1 {
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+section.info-section .cards {
+    margin-top: 0.5em;
+}
+.cards .card p {
+    font-weight: 300;
+    font-size: 0.8em;
+}
+
+.cards .card h3 {
+    font-weight: 600;
+    color: var(--bg-text);
+    font-size: 1em;
+}
+
 /** info-section > title */
 section.info-section {
     display: flex;
@@ -165,29 +248,15 @@ section.info-section {
 }
 
 section.info-section .container {
-    width: 80%;
-}
-
-section.info-section .title {
-    background-color: var(--primary);
-    padding: 0.5em 1.2em;
-    color: var(--text);
-    width: fit-content;
+    width: 90%;
     display: flex;
-    gap: 3em;
-    align-items: center;
-}
-
-section.info-section .title h1 {
-    font-weight: 600;
+    flex-direction: column;
+    gap: 1em;
 }
 
 /** info-section > skill */
 section.info-section .skill-section {
-    margin-top: 2em;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
+    margin-top: 1em;
 }
 
 section.info-section .skill-section .cards {
@@ -198,12 +267,16 @@ section.info-section .skill-section .cards {
 section.info-section .skill-section .cards .card {
     display: flex;
     flex-direction: column;
-    gap: 0.5em;
+    gap: 0.2em;
 }
 
 section.info-section .skill-section .cards .card h3 {
     font-weight: 600;
     color: var(--bg-text);
+}
+
+section.info-section .skill-section .cards .card ul {
+    padding-left: 0.8em;
 }
 
 section.info-section .skill-section .cards .card ul li {
@@ -212,3 +285,30 @@ section.info-section .skill-section .cards .card ul li {
 }
 
 /** info-section > project */
+section.project-section .cards {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 0.5em;
+}
+
+/** info-section > competition */
+section.competition-section .cards {
+    display: flex;
+}
+section.competition-section .cards .card h3 {
+    width: 60%;
+}
+
+/** info-section > academic */
+section.academic-section .cards {
+    display: flex;
+    gap: 3em;
+}
+
+section.academic-section .cards span {
+    background-color: var(--bg-text);
+    text-align: center;
+    padding: 0.2em 1em;
+    color: var(--text);
+    font-size: 0.7em;
+}

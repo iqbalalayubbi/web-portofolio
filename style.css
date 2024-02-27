@@ -134,6 +134,18 @@ header nav ul li a {
     font-weight: 700;
 }
 
+.hero-section .cta p {
+    font-weight: 400;
+    opacity: 0.9;
+    color: var(--text);
+}
+
+.hero-section .cta div {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
 .hero-section .cta button.contact {
     background-color: var(--primary);
     color: var(--text);
@@ -143,6 +155,22 @@ header nav ul li a {
     border-radius: 0.3em;
     font-weight: 500;
     font-size: 1em;
+}
+
+.hero-section .cta div:first-of-type button a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.hero-section .cta div:first-of-type > a {
+    color: var(--text);
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+.hero-section .cta div:first-of-type a:hover {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
 }
 
 .hero-section .cta .social-media {
