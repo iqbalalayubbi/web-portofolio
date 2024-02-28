@@ -1,0 +1,7 @@
+f6efb05 (HEAD -> master) UPDATE: set up css style for light mode
+83cbc60 CHANGE: change url image and upload example.html to ilmu
+c92aec2 CHANGE: make modular css
+6a7987e CREATE: try html tag in example.html
+8a7d362 FINISH: create portofolio and connect to complete cv
+620bc48 UPDATE: complete hero-section and working on info section
+f90ff9e INITIALIZE: create complete portofolio web and create new cv html
