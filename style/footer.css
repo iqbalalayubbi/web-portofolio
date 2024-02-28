@@ -7,7 +7,7 @@ footer {
 }
 
 footer h1 {
-    color: var(--text);
+    color: var(--normal);
     font-weight: 500;
     font-size: 1.5em;
     align-self: center;
@@ -20,7 +20,7 @@ footer h1::after {
     display: block;
     z-index: -1;
     height: 0.8em;
-    background-color: var(--bg-text);
+    background-color: var(--footer-bg);
     margin: auto;
     margin-top: -16px;
     width: 10em;
@@ -33,7 +33,7 @@ footer .menu {
 
 footer .menu h3 {
     font-weight: 500;
-    color: var(--text);
+    color: var(--normal);
 }
 
 footer .menu .sub-menu {
@@ -42,7 +42,7 @@ footer .menu .sub-menu {
 }
 
 footer .menu span a {
-    color: var(--text);
+    color: var(--normal);
     text-decoration: none;
     opacity: 0.5;
 }

@@ -16,9 +16,9 @@
     background-color: var(--primary);
     border-radius: 0.5em;
     padding: 1em 2em;
-    color: var(--text);
     width: 30%;
     text-align: center;
+    color: var(--normal);
 }
 
 .competition-section .cards .card img {

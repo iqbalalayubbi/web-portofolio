@@ -41,6 +41,7 @@
 .academic-section .training .cards .card h1 {
     font-weight: 600;
     font-size: 1em;
+    color: var(--normal);
 }
 
 .academic-section .training .cards .card > div {
@@ -51,7 +52,7 @@
 
 .academic-section .training .cards .card > div a {
     text-decoration: none;
-    color: var(--text);
+    color: var(--normal);
     opacity: 0.5;
 }
 
@@ -95,11 +96,13 @@
 .academic-section .study .timeline .school .school-info h1 {
     font-size: 1em;
     font-weight: 600;
+    color: var(--text);
 }
 
 .academic-section .study .timeline .school .school-info h3 {
     font-size: 0.8em;
     font-weight: 300;
+    color: var(--text);
 }
 
 .academic-section .study .timeline .school-info h5 {
