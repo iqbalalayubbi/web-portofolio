@@ -1,0 +1,48 @@
+footer {
+    margin-top: 10em;
+    background-color: #2c2b46;
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5em 2em;
+}
+
+footer h1 {
+    color: var(--text);
+    font-weight: 500;
+    font-size: 1.5em;
+    align-self: center;
+    opacity: 0.8;
+    text-align: center;
+}
+
+footer h1::after {
+    content: "";
+    display: block;
+    z-index: -1;
+    height: 0.8em;
+    background-color: var(--bg-text);
+    margin: auto;
+    margin-top: -16px;
+    width: 10em;
+}
+
+footer .menu {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .menu h3 {
+    font-weight: 500;
+    color: var(--text);
+}
+
+footer .menu .sub-menu {
+    display: flex;
+    gap: 1em;
+}
+
+footer .menu span a {
+    color: var(--text);
+    text-decoration: none;
+    opacity: 0.5;
+}

@@ -1,0 +1,488 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("variabel.css");
+@import url("reset.css");
+@import url("global.css");
+@import url("hero.css");
+@import url("skill.css");
+@import url("academic.css");
+@import url("project.css");
+@import url("footer.css");
+
+/*! my style */
+body {
+    background-color: var(--bg);
+}
+
+/*? header */
+header {
+    margin-top: 1em;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+/*! responsive */
+@media screen and (min-width: 0px) and (max-width: 360px) {
+    /*? header */
+    header nav ul li a {
+        font-size: 0.8em;
+    }
+
+    /*? hero-section */
+    .hero-section {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .hero-section .cta > h1 {
+        font-size: 1.5em;
+    }
+
+    .hero-section .cta h1.name {
+        font-size: 1.8em;
+        padding-right: 1em;
+        width: fit-content;
+    }
+
+    .hero-section .cta p {
+        font-size: 0.7em;
+    }
+
+    .hero-section .cta button.contact {
+        padding: 0.5em 0.3em;
+        width: 40%;
+        font-size: 0.8em;
+    }
+
+    .hero-section .cta .social-media {
+        display: flex;
+        gap: 1em;
+    }
+
+    .hero-section .cta .social-media img {
+        width: 1em;
+    }
+
+    /*? skill-section */
+    .skill-section .container {
+        grid-template-columns: auto;
+        justify-content: center;
+        row-gap: 2em;
+    }
+
+    .skill-section .container div.main-card > h1 {
+        font-size: 1em;
+    }
+
+    .skill-section .container div.main-card .cards .card {
+        font-size: 0.5em;
+        width: 12em;
+    }
+
+    /*? academic-section */
+    .academic-section .training h1,
+    .academic-section .study h1 {
+        font-size: 1.2em;
+    }
+
+    .academic-section .training .cards {
+        flex-direction: column;
+        gap: 1.5em;
+    }
+    .academic-section .training .cards .card > h1 {
+        font-size: 0.8em;
+    }
+    .academic-section .training .cards .card > div img {
+        width: 80px;
+    }
+    .academic-section .training .cards .card > div a {
+        font-size: 0.8em;
+    }
+
+    .academic-section .study {
+        margin-top: 3em;
+    }
+
+    .academic-section .study .timeline {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.8em;
+    }
+
+    /*? project-section */
+    .project-section .cards {
+        grid-template-columns: auto;
+    }
+
+    .project-section .cards .card {
+        width: 90%;
+    }
+
+    .project-section .cards .card img {
+        height: 80px;
+    }
+
+    .project-section .cards .card .content h1 {
+        font-size: 1em;
+    }
+    .project-section .cards .card .content h3 {
+        font-size: 0.8em;
+    }
+    .project-section .cards .card .content p {
+        font-size: 0.7em;
+        width: 100%;
+    }
+
+    /*? competition-section */
+    .competition-section .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 3em;
+    }
+    .competition-section .cards .card {
+        width: 80%;
+    }
+    .competition-section .cards .card h1 {
+        font-size: 1em;
+    }
+    .competition-section .cards .card p {
+        font-size: 0.7em;
+    }
+
+    /*? footer */
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+    footer > h1 {
+        font-size: 1.5em;
+    }
+    footer .menu h3 {
+        font-size: 1em;
+        text-align: center;
+    }
+    footer .menu .sub-menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+    footer .menu .sub-menu a {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 640px) {
+    /*? header */
+    header nav ul li a {
+        font-size: 1em;
+    }
+
+    /*? hero-section */
+    .hero-section {
+        flex-direction: column;
+        gap: 0;
+        padding: 0 2em;
+    }
+
+    .hero-section .cta {
+        align-self: flex-start;
+    }
+
+    .hero-section .cta > h1 {
+        font-size: 1.8em;
+    }
+
+    .hero-section .cta h1.name {
+        font-size: 2em;
+        width: fit-content;
+    }
+
+    .hero-section .cta p {
+        font-size: 0.8em;
+    }
+
+    .hero-section .cta button.contact {
+        width: 50%;
+        font-size: 1em;
+    }
+
+    .hero-section .picture {
+        align-self: flex-end;
+    }
+
+    /*? skill-section */
+    .skill-section .container {
+        grid-template-columns: auto;
+        row-gap: 2em;
+    }
+
+    .skill-section .container div.main-card > h1 {
+        font-size: 1.2em;
+    }
+
+    .skill-section .container div.main-card .cards .card {
+        font-size: 0.7em;
+        width: 10em;
+        padding: 2em 0;
+    }
+
+    /*? academic-section */
+    .academic-section .training h1,
+    .academic-section .study h1 {
+        font-size: 1.5em;
+    }
+
+    .academic-section .training .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5em;
+    }
+
+    .academic-section .training .cards .card {
+        width: 100%;
+    }
+
+    .academic-section .training .cards .card > h1 {
+        font-size: 1em;
+    }
+    .academic-section .training .cards .card > div img {
+        width: 80px;
+    }
+    .academic-section .training .cards .card > div a {
+        font-size: 0.8em;
+    }
+
+    .academic-section .study {
+        margin-top: 3em;
+    }
+
+    .academic-section .study .timeline {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.8em;
+    }
+
+    /*? project-section */
+    .project-section .cards {
+        grid-template-columns: auto;
+    }
+
+    .project-section .cards .card {
+        width: 90%;
+    }
+
+    .project-section .cards .card img {
+        height: 80px;
+    }
+
+    .project-section .cards .card .content h1 {
+        font-size: 1em;
+    }
+    .project-section .cards .card .content h3 {
+        font-size: 0.8em;
+    }
+    .project-section .cards .card .content p {
+        font-size: 0.7em;
+        width: 100%;
+    }
+
+    /*? competition-section */
+    .competition-section .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 3em;
+    }
+    .competition-section .cards .card {
+        width: 80%;
+    }
+    .competition-section .cards .card h1 {
+        font-size: 1em;
+    }
+    .competition-section .cards .card p {
+        font-size: 0.7em;
+    }
+
+    /*? footer */
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+    footer > h1 {
+        font-size: 1.5em;
+    }
+    footer .menu h3 {
+        font-size: 1em;
+        text-align: center;
+    }
+    footer .menu .sub-menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+    footer .menu .sub-menu a {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1080px) {
+    /*? hero-section */
+    .hero-section {
+        justify-content: center;
+    }
+
+    .hero-section .cta {
+        width: 40%;
+    }
+    .hero-section .cta > h1 {
+        font-size: 1.3em;
+    }
+
+    .hero-section .cta h1.name {
+        font-size: 1.5em;
+    }
+
+    .hero-section .cta p {
+        font-size: 0.7em;
+    }
+
+    .hero-section .cta button.contact {
+        width: 60%;
+        font-size: 1em;
+    }
+
+    .hero-section .picture {
+        width: 40%;
+        align-self: flex-end;
+    }
+
+    .hero-section .picture img {
+        width: 100%;
+    }
+
+    /*? skill-section */
+    .skill-section .container {
+        grid-template-columns: auto auto;
+        row-gap: 2em;
+        column-gap: 0;
+    }
+
+    .skill-section .container div.main-card > h1 {
+        font-size: 1.2em;
+    }
+
+    .skill-section .container div.main-card .cards .card {
+        font-size: 0.6em;
+        width: 10em;
+        padding: 2em 0;
+    }
+
+    .skill-section .container div.main-card .cards .card img {
+        height: 25px;
+    }
+
+    /*? academic-section */
+    .academic-section .training h1,
+    .academic-section .study h1 {
+        font-size: 1.5em;
+    }
+
+    .academic-section .training .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5em;
+    }
+
+    .academic-section .training .cards .card {
+        width: 100%;
+    }
+
+    .academic-section .training .cards .card > h1 {
+        font-size: 1em;
+    }
+    .academic-section .training .cards .card > div img {
+        width: 80px;
+    }
+    .academic-section .training .cards .card > div a {
+        font-size: 0.8em;
+    }
+
+    .academic-section .study {
+        margin-top: 3em;
+    }
+
+    .academic-section .study .timeline {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.8em;
+    }
+
+    /*? project-section */
+    .project-section .cards {
+        grid-template-columns: auto auto;
+    }
+
+    .project-section .cards .card {
+        width: 90%;
+    }
+
+    .project-section .cards .card img {
+        height: 80px;
+    }
+
+    .project-section .cards .card .content h1 {
+        font-size: 1em;
+    }
+    .project-section .cards .card .content h3 {
+        font-size: 0.8em;
+    }
+    .project-section .cards .card .content p {
+        font-size: 0.7em;
+        width: 100%;
+    }
+
+    /*? competition-section */
+    .competition-section .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 3em;
+    }
+    .competition-section .cards .card {
+        width: 70%;
+    }
+    .competition-section .cards .card h1 {
+        font-size: 1em;
+    }
+    .competition-section .cards .card p {
+        font-size: 0.7em;
+    }
+
+    /*? footer */
+    footer {
+        gap: 1em;
+    }
+    footer > h1 {
+        font-size: 1.5em;
+    }
+    footer .menu h3 {
+        font-size: 1em;
+        text-align: center;
+    }
+    footer .menu .sub-menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+    footer .menu .sub-menu a {
+        font-size: 0.8em;
+    }
+}

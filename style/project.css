@@ -1,0 +1,48 @@
+.project-section > h1::after {
+    width: 7em;
+}
+
+.project-section .cards {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    row-gap: 2em;
+}
+
+.project-section .cards .card {
+    display: flex;
+    gap: 1em;
+    color: var(--text);
+    background-color: var(--primary);
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5em;
+    padding: 1em 1.5em;
+}
+
+.project-section .cards .card img {
+    height: 100px;
+}
+
+.project-section .cards .card .content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    width: fit-content;
+}
+
+.project-section .cards .card h1 {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.project-section .cards .card h3 {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.project-section .cards .card p {
+    font-size: 0.8em;
+    opacity: 0.8;
+    width: 80%;
+}

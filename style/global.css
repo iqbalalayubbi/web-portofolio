@@ -1,0 +1,33 @@
+/*! global style */
+h1.title-section {
+    font-size: 2em;
+    color: var(--text);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+h1.title-section::after {
+    content: "";
+    display: block;
+    z-index: -1;
+    height: 0.5em;
+    background-color: var(--bg-text);
+    margin: auto;
+    margin-top: -20px;
+}
+
+section.main-content {
+    margin-top: 10em;
+}
+
+.hover-animation:hover {
+    filter: brightness(80%);
+    transition: all 0.3s ease;
+    box-shadow: none !important;
+    cursor: pointer;
+}
+
+.shadow {
+    box-shadow: var(--shadowColor);
+}

@@ -62,7 +62,7 @@ section.hero-section {
     background-color: var(--bg);
     display: flex;
     flex-direction: column;
-    gap: 1.5em;
+    gap: 1.2em;
     width: 50%;
     align-items: center;
 }
@@ -182,9 +182,15 @@ section.hero-section .certificate .cards .card a:hover {
     transition: all 0.3s ease-in;
 }
 
-section.hero-section button.back {
-    margin-top: 0.8em;
-    background-color: rgb(183, 0, 0);
+/** hero-section > certificate */
+section.hero-section .action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+}
+
+section.hero-section .action button {
     color: var(--text);
     border: none;
     padding: 0.5em 2em;
@@ -193,13 +199,28 @@ section.hero-section button.back {
     font-size: 0.8em;
 }
 
-section.hero-section button.back:hover {
-    background-color: rgb(155, 0, 0);
+section.hero-section .action button.back {
+    background-color: rgb(183, 0, 0);
+}
+
+section.hero-section .action button.download {
+    background-color: rgb(25, 169, 0);
+}
+
+section.hero-section .action button:hover {
     transition: all 0.3s ease-in;
     box-shadow: none;
 }
 
-section.hero-section button.back a {
+section.hero-section .action button.back:hover {
+    background-color: rgb(155, 0, 0);
+}
+
+section.hero-section .action button.download:hover {
+    background-color: rgb(19, 125, 0);
+}
+
+section.hero-section .action button a {
     font-weight: 600;
     color: var(--text);
     text-decoration: none;
