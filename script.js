@@ -6,6 +6,13 @@ function darkMode() {
     $("body").removeClass("light-mode");
 }
 
-$("")
-    // lightMode();
-    .darkMode();
+$("document").ready(function () {
+    darkMode();
+    $("#toggle").change(function () {
+        if ($("#toggle").is(":checked")) {
+            darkMode();
+        } else {
+            lightMode();
+        }
+    });
+});
