@@ -20,6 +20,16 @@ body {
     background-color: var(--bg);
 }
 
+.bg-hero {
+    /* background-color: pink; */
+    background-color: var(--bg);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 /*? header */
 header {
     margin-top: 1em;
@@ -31,6 +41,7 @@ header nav ul {
     align-items: center;
     gap: 2em;
 }
+
 header nav ul li a {
     text-decoration: none;
     color: var(--text);
@@ -48,7 +59,7 @@ header nav ul li a {
     height: var(--size);
     box-shadow: inset calc(var(--size) * 0.33) calc(var(--size) * -0.25) 0;
     border-radius: 999px;
-    color: var(--normal);
+    color: var(--footer-bg);
 
     transition: all 500ms;
 

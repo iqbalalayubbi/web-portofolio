@@ -1,3 +1,7 @@
+.project-section {
+    position: relative;
+}
+
 .project-section > h1::after {
     width: 7em;
 }

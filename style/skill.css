@@ -1,6 +1,7 @@
 .skill-section {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .skill-section > h1::after {
