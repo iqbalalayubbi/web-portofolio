@@ -71,6 +71,7 @@
 .hero-section .cta .social-media {
     display: flex;
     gap: 1.5em;
+    transition: all 0.3s ease-in-out;
 }
 
 .hero-section .cta img {
@@ -84,5 +85,5 @@
 }
 .hero-section .picture img {
     width: 90%;
-    filter: brightness(85%);
+    transition: all 0.3s ease-in-out;
 }

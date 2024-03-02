@@ -1,5 +1,7 @@
 .project-section {
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-section > h1::after {
