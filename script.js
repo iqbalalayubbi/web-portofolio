@@ -11,6 +11,16 @@ function darkMode() {
     $(".hero-section .cta .social-media").css("filter", "invert(0%)");
     $(".hero-section .picture img").css("opacity", "0.7");
 }
+function tableView() {
+    $(".academic-section .study .timeline table").css("display", "table");
+    $(".academic-section .study .timeline table").addClass("slide-in-left");
+    $(".academic-section .study .timeline .school").css("display", "none");
+}
+function timelineView() {
+    $(".academic-section .study .timeline table").css("display", "none");
+    $(".academic-section .study .timeline .school").css("display", "flex");
+    $(".academic-section .study .timeline .school").addClass("slide-in-right");
+}
 
 $("document").ready(function () {
     darkMode();
@@ -60,6 +70,16 @@ $("document").ready(function () {
     //? show element when scrolling
     $(document.body).on("touchmove", onScroll);
     $(window).scroll(onScroll);
+
+    // switch button in academic section
+    tableView();
+    $("#switch-table").change(function () {
+        if ($("#switch-table").is(":checked")) {
+            tableView();
+        } else {
+            timelineView();
+        }
+    });
 });
 
 function onScroll() {
