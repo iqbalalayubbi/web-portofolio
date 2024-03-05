@@ -267,6 +267,19 @@ header nav ul li a {
     header nav.active-nav ul li a {
         color: var(--normal);
     }
+
+    /*? academic-section */
+    .academic-section .study {
+        width: 90%;
+    }
+
+    .academic-section .study .timeline {
+        overflow-x: scroll;
+    }
+
+    .academic-section .study .timeline table {
+        width: 500px;
+    }
 }
 
 @media screen and (min-width: 360px) and (max-width: 640px) {

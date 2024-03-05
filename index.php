@@ -39,7 +39,7 @@ include "globalVar.php"
                 <p>Informatic student at UPN Vetrean Jawa Timur.<br />Let me introduce my self from this portofolio</p>
                 <div>
                     <button class="contact hover-animation shadow"><a href="mailto:iqbal.is415@gmail.com">Contact Me</a></button>
-                    <a href="cv.html">Detail CV</a>
+                    <a href="cv.php">Detail CV</a>
                 </div>
                 <div class="social-media">
                     <a href="https://www.linkedin.com/in/iqbal-alayyubi-3127b6234" target="_blank" class="hover-animation"><img src="asset/icon/linkedin.svg" alt="" /></a>
@@ -80,7 +80,7 @@ include "globalVar.php"
         </section>
         <section class="academic-section main-content" id="academic">
             <h1 class="title-section hover-animation">Academic</h1>
-            <nav class="hide-menu">
+            <nav class="hide-menu" style="top: 10%;">
                 <ul>
                     <?php include "components/navbar.php" ?>
                 </ul>
@@ -108,63 +108,35 @@ include "globalVar.php"
                     <table cellspacing="0" align="center">
                         <thead>
                             <tr>
-                                <th>Sekolah</th>
-                                <th>Bidang</th>
-                                <th>Tahun</th>
-                                <th>Lokasi</th>
+                                <th>School</th>
+                                <th>Major</th>
+                                <th>Year</th>
+                                <th>Location</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>SMP Al-Azhar Mandiri Palu</td>
-                                <td>-</td>
-                                <td>2016-2019</td>
-                                <td>Palu, Sulawesi Tengah</td>
-                            </tr>
-                            <tr>
-                                <td>SMKN 1 Balikpapan</td>
-                                <td>Teknik Elektronika Industri</td>
-                                <td>2019-2022</td>
-                                <td>Balikpapan, Kalimantan Timur</td>
-                            </tr>
-                            <tr>
-                                <td>UPN Veteran Jawa Timur</td>
-                                <td>Informatika</td>
-                                <td>2022-Sekarang</td>
-                                <td>Surabaya, Jawa Timur</td>
-                            </tr>
+                            <?php foreach ($schools as $school) : ?>
+                                <tr data-link="<?= $school['link'] ?>">
+                                    <td><?= $school["name"] ?></td>
+                                    <td><?= $school["major"] ?></td>
+                                    <td><?= $school["year"] ?></td>
+                                    <td><?= $school["location"] ?></td>
+                                </tr>
+                            <?php endforeach ?>
                         </tbody>
                     </table>
-                    <div class="school">
-                        <a href="https://dapo.kemdikbud.go.id/sekolah/55B0CA7E3E22A1EF7001" target="_blank" class="hover-animation">
-                            <div class="circle"></div>
-                        </a>
-                        <div class="school-info">
-                            <h1>SMP Al-Azhar Mandiri Palu</h1>
-                            <h3>-</h3>
-                            <h5>2016-2019</h5>
+                    <?php foreach ($schools as $school) : ?>
+                        <div class="school">
+                            <a href="<?= $school['link'] ?>" target="_blank" class="hover-animation">
+                                <div class="circle"></div>
+                            </a>
+                            <div class="school-info">
+                                <h1><?= $school["name"] ?></h1>
+                                <h3><?= $school["major"] ?></h3>
+                                <h5><?= $school["year"] ?></h5>
+                            </div>
                         </div>
-                    </div>
-                    <div class="school">
-                        <a href="https://dapo.kemdikbud.go.id/sekolah/70DA633F275174BBC872" target="_blank" class="hover-animation">
-                            <div class="circle"></div>
-                        </a>
-                        <div class="school-info">
-                            <h1>SMKN 1 Balikpapan</h1>
-                            <h3>Teknik Elektronika Industri</h3>
-                            <h5>2019-2022</h5>
-                        </div>
-                    </div>
-                    <div class="school">
-                        <a href="https://www.upnjatim.ac.id/" target="_blank" class="hover-animation">
-                            <div class="circle"></div>
-                        </a>
-                        <div class="school-info">
-                            <h1>UPN Veteran Jawa Timur</h1>
-                            <h3>Informatika</h3>
-                            <h5>2022-Sekarang</h5>
-                        </div>
-                    </div>
+                    <?php endforeach ?>
                 </div>
             </div>
             <div class="bg-hero"></div>

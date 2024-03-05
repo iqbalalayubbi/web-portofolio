@@ -68,7 +68,7 @@
             </section>
             <section class="action">
                 <button class="download"><a href="asset/CV.pdf" download="cv.pdf">Donwload ATS CV</a></button>
-                <button class="back"><a href="index.html">Back to Portofolio</a></button>
+                <button class="back"><a href="index.php">Back to Portofolio</a></button>
             </section>
         </section>
         <section class="info-section">

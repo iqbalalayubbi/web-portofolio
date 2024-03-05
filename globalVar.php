@@ -121,3 +121,26 @@ $competitions = [
         "icon" => "game-development-icon.png"
     ]
 ];
+$schools = [
+    [
+        "name" => "SMP Al-Azhar Mandiri Palu",
+        "major" => "-",
+        "year" => "2016-2019",
+        "location" => "Palu, Sulawesi Tengah",
+        "link" => "https://dapo.kemdikbud.go.id/sekolah/55B0CA7E3E22A1EF7001"
+    ],
+    [
+        "name" => "SMKN 1 Balikpapan",
+        "major" => "Teknik Elektronika Industri",
+        "year" => "2019-2022",
+        "location" => "Balikpapan, Kalimantan Timur",
+        "link" => "https://dapo.kemdikbud.go.id/sekolah/70DA633F275174BBC872"
+    ],
+    [
+        "name" => "UPN Veteran Jawa Timur",
+        "major" => "Informatika",
+        "year" => "2022-Sekarang",
+        "location" => "Surabaya, Jawa Timur",
+        "link" => "https://www.upnjatim.ac.id/"
+    ]
+];

@@ -71,7 +71,7 @@ $("document").ready(function () {
     $(document.body).on("touchmove", onScroll);
     $(window).scroll(onScroll);
 
-    // switch button in academic section
+    //? switch button in academic section
     tableView();
     $("#switch-table").change(function () {
         if ($("#switch-table").is(":checked")) {
@@ -79,6 +79,11 @@ $("document").ready(function () {
         } else {
             timelineView();
         }
+    });
+
+    //? visit shool website
+    $(".academic-section .study .timeline table tbody tr").click(function () {
+        window.open($(this).attr("data-link"));
     });
 });
 

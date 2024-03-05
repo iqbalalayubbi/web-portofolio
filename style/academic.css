@@ -144,6 +144,12 @@
     filter: brightness(95%);
 }
 
+.academic-section .study .timeline table tbody tr:hover {
+    background-color: var(--normal);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
 .academic-section .study .timeline table tbody tr td {
     font-size: 0.7em;
     font-weight: 600;
